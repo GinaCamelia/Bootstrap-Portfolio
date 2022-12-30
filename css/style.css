@@ -144,14 +144,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 630px) {
     .jumbotron {
         background-size: contain!important;
         background-repeat: no-repeat!important;
     }
 
     .jumbotron .welcome {
-        margin-top: 400px;
+        margin-top: -400px!important;
+        line-height: 2;
     }
 
     .jumbotron h1 {
@@ -159,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .jumbotron p {
-        font-size: 1em;
+        font-size: 1.2em;
+        color:#00204a;
     }
 }
