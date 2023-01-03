@@ -23,7 +23,7 @@ N/A
 
  ![](../../bootcamp/Bootstrap-Portfolio/images/Screenshot.png)
 
- Deployed Website: [link]()
+ Deployed Website: [Click here](https://ginacamelia.github.io/Bootstrap-Portfolio/)
 
  ## Credits
 
