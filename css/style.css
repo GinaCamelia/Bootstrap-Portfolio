@@ -21,9 +21,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color:#a83279;
 }
+
  p {
     font-family: "Oswald" sans-serif;
     font-weight: 300;
+    color: #00204a;
  }
 
  .btn-light {
@@ -35,6 +37,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
     border-radius: 1px solid #a83279 !important;
     transition: all 200ms ease-in-out;
+ }
+
+ .subheading {
+    border-bottom: 2.5px solid #a83279;
+
  }
 
 /* Navigation */
@@ -86,10 +93,25 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+/* Skills */
+
+ .icon-languages {
+    font-size: 4em;
+    color: #d38312;
+ }
+
+ .technology small {
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+ }
+
 /* Jumbotron */
 
 .jumbotron {
-    background-image: url(../images/gina.jpg);
+    background-image: url(../images/twitter-link-gina.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
@@ -107,6 +129,15 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 500px;
     max-width: 700px;
     text-align: center;
+}
+
+p.lead {
+    font-size: 24px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    color: #00204a;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 
@@ -144,23 +175,31 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 700px) {
     .jumbotron {
-        background-size: contain!important;
+        background-image: url(../images/insta-stories-gina.jpg);
+        background-size: cover!important;
         background-repeat: no-repeat!important;
     }
 
-    .jumbotron .welcome {
-        margin-top: -400px!important;
-        line-height: 2;
+    .jumbotron p {
+        margin-top: 100px;
+        width: auto;
+        font-size: 1.2em;
     }
 
     .jumbotron h1 {
-        font-size: 2em;
+        display: none;
     }
 
-    .jumbotron p {
-        font-size: 1.2em;
-        color:#00204a;
+    .container-jumbo {
+        max-width: auto;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .technology small {
+        margin-bottom: 15px;
     }
 }
