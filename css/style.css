@@ -140,6 +140,13 @@ p.lead {
     border-radius: 5px;
 }
 
+/* Skills */
+#programming-skills {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
 
 /* footer */
 
@@ -153,21 +160,6 @@ p.lead {
     color: #00204a;
     transition: all 200ms ease-in-out;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 1000px) {
     .nav-link:hover {
