@@ -76,7 +76,18 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link:hover {
     font-weight: 600;
     border-bottom: 2px solid #fff;
-    transition: all 200ms ease-in-out;
+    transition: 0.5s ease;
+}
+
+.navbar-nav:hover .nav-item .nav-link {
+    border-bottom: none!important;
+    color: white;
+}
+
+.navbar-nav:hover .nav-item .nav-link:not(:hover) {
+    color: #fff;
+    opacity: 0.3;
+    filter: blur(1px);
 }
 
 .navbar-brand {
