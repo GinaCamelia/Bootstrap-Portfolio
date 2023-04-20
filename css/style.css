@@ -46,15 +46,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-    font-size: 1.5em;
-    margin: 3px;
+    font-size: 1.2em;
+    margin: 5px;
     color: #fff!important;
     font-weight: 300;
 }
 
 .navbar-nav {
-    text-align: right;
+    text-align: left;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .custom-nav .navbar-toggler {
@@ -92,8 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-brand {
     margin-top: 5px;
-    margin-left: 20px;
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Source Serif Pro', serif;
     font-weight: 600;
 }
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(../images/twitter-link-gina.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    min-height: 70vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -131,10 +131,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-jumbo {
-    width: 70%;
-    min-width: 500px;
-    max-width: 700px;
+    width: 90%;
+    /* min-width: 500px; */
+    max-width: 1000px;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: center;
 }
 
 p.lead {
@@ -146,7 +148,26 @@ p.lead {
     border-radius: 5px;
 }
 
-/* Skills */
+/* My work */
+.card {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+}
+
+.card-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
 #programming-skills {
     border-radius: 50%;
     height: 30px;
@@ -163,7 +184,7 @@ p.lead {
 .footer .fa {
     font-size: 2em;
     color: #fff;
-    margin: 0 15px;
+    margin: 0 35px;
 }
 
 .footer .fa:hover {
@@ -172,16 +193,20 @@ p.lead {
 }
 
 @media only screen and (max-width: 1000px) {
+    .jumbotron {
+        background-position: center;
+    }
+
     .nav-link:hover {
         border-bottom: none!important;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .jumbotron {
         background-image: url(../images/insta-stories-gina.jpg);
-        background-size: cover!important;
-        background-repeat: no-repeat!important;
+        background-position: center center;
+        min-height: 60vh;
     }
 
     .jumbotron p {
@@ -199,7 +224,15 @@ p.lead {
     }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (min-width: 575px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jumbotron {
+        background-position: center center;
+    }
 
     .technology small {
         margin-bottom: 15px;
